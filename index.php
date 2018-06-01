@@ -35,9 +35,25 @@
             </nav>
         </header>
         <main>
-            <div class="featured carousel">
+            <div class="books">
+                <div class="books_featured carousel">
+                </div>
+                <div class="books_bestseller carousel">
+                </div>
+                <a href="">Visit the Shop</a>
             </div>
-            <div class="bestseller carousel">
+            <div class="creators">
+                <div class="creators_featured">
+                </div>
+                <a href="">Creators</a>
+            </div>
+            <div class="sections">
+                <div class="sections_news news">
+                </div>
+                <div class="sections_blog blog">
+                </div>
+                <div class="sections_events events">
+                </div>                
             </div>
         </main>
         <footer>
