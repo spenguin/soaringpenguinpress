@@ -48,17 +48,34 @@
                 <a href="">Creators</a>
             </div>
             <div class="sections">
-                <div class="sections_news news">
+                <div class="sections_teaser news ">
+                    <ul>
+                        <li><time datetime="13 May 2018">News title 3</li>
+                        <li><time datetime="10 April 2018">News title 2</li>
+                        <li><time datetime="6 February 2018">News title 1</li>
+                    </ul>
                 </div>
-                <div class="sections_blog blog">
+                <div class="sections_teaser blog">
+                <ul>
+                        <li><time datetime="13 May 2018">Blog title 3</li>
+                        <li><time datetime="10 April 2018">Blog title 2</li>
+                        <li><time datetime="6 February 2018">Blog title 1</li>
+                    </ul>                
                 </div>
-                <div class="sections_events events">
+                <div class="sections_teaser events">
+                <ul>
+                        <li><time datetime="13 May 2018">Events title 3</li>
+                        <li><time datetime="10 April 2018">Events title 2</li>
+                        <li><time datetime="6 February 2018">Events title 1</li>
+                    </ul>                
                 </div>                
             </div>
         </main>
         <footer>
+            <p class="copyright">Soaring Penguin Press</p>
+            <p class="registration">4 Florence Terrace, London SW15 3RU</p>
+            <nav class="footer_nav"><a href="">About</a>|<a href="">Contact</a>|<a href="">Submissions</a>|<a href="">T&Cs</a></nav>
         </footer>
     </div>
-    
 </body>
 </html>
