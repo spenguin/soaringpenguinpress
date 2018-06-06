@@ -1,0 +1,17 @@
+/**
+    Font styles
+*/
+$bodyFamily:    "Merriweather", Georgia, serif;
+$headerFamily:  "Lato", Arial, sans-serif;
+
+body {
+    font-family: $bodyFamily;
+    line-height: 1.8rem;
+    color: $SPPDarkBlue;    
+}
+
+p {
+    font-size: 1.0rem;
+    margin-top: 0;
+    margin-bottom: 0; 
+}

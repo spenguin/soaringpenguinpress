@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Soaring Penguin Press</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 <!--    <script src="main.js"></script>-->
 </head>

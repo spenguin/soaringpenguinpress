@@ -1,9 +1,10 @@
-/*
+
 @import "partials/settings.global";
 @import "partials/settings.colours";
 @import "partials/fonts.all";
-*/
+
 @import "partials/structure/structure.grid";
+@import "partials/structure/structure.wrappers";
 /*
 @import "partials/tools/tools.mixins";
 @import "partials/tools/tools.media-queries";
@@ -16,10 +17,10 @@
 
 
 @import "partials/elements.headings";
-@import "partials/elements.text";
+@import "partials/elements.text";*/
 
 @import "partials/components.all";
-
+/*
 @import "partials/components.header";
 @import "partials/components.footer";
 @import "partials/components.site-nav";

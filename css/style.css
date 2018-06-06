@@ -1,11 +1,55 @@
-/*
-@import "partials/settings.global";
-@import "partials/settings.colours";
-@import "partials/fonts.all";
+/**
+ *  Global settings
+ */
+html, body {
+  height: 100%;
+}
+
+/**
+    Colours
 */
+/**
+    Font styles
+*/
+body {
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.8rem;
+  color: #035491;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /**
 	Grid values
 */
+/**
+    Wrappers styles
+*/
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  padding: 5%;
+}
+
+footer {
+  width: 100%;
+}
+
 /*
 @import "partials/tools/tools.mixins";
 @import "partials/tools/tools.media-queries";
@@ -18,10 +62,23 @@
 
 
 @import "partials/elements.headings";
-@import "partials/elements.text";
+@import "partials/elements.text";*/
+/**
+    Components accumulated
+*/
+/**
+    Header
+*/
+header {
+  background-color: #035491;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
-@import "partials/components.all";
-
+/*
 @import "partials/components.header";
 @import "partials/components.footer";
 @import "partials/components.site-nav";
