@@ -39,7 +39,7 @@ html, body {
 }
 
 header {
-  width: 100%;
+  max-width: 100%;
 }
 
 main {
@@ -76,8 +76,53 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  padding: 0 1%;
 }
 
+/**
+    Footer
+*/
+footer {
+  background-color: #035491;
+  color: white;
+}
+
+/**
+    Forms
+*/
+.styled-select select {
+  background-color: #035491;
+  border: none;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 0.8rem;
+  color: #24A0FF;
+}
+.styled-select select option {
+  border: none;
+  border-bottom: 1px solid #035491;
+  background-color: #24A0FF;
+  color: #035491;
+}
+
+/*
+.styled-select select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+.styled-select {
+    width: 240px;
+    height: 34px;
+    overflow: hidden;
+    background: url(new_arrow.png) no-repeat right #ddd;
+    border: 1px solid #ccc;
+}*/
 /*
 @import "partials/components.header";
 @import "partials/components.footer";

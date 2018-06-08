@@ -6,6 +6,8 @@
     <title>Soaring Penguin Press</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <!-- <script src="https://use.fontawesome.com/0248a6365b.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 <!--    <script src="main.js"></script>-->
 </head>
@@ -13,9 +15,9 @@
     <div class="container">
         <header>
             <div class="login">
-                <a href="">Login</a>
+                <a href=""><i class="fas fa-sign-in-alt"></i></a>
             </div>
-            <div class="geolocation">
+            <div class="geolocation styled-select">
                 <select name="location">
                     <option value="">Location 1</option>
                     <option value="">Location 2</option>
@@ -27,12 +29,16 @@
             </div>
             <div class="cart">
                 <a href="">Cart</a>
-            <div>
+            </div>
             <nav class="mobile">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                </ul>
+                <label class="open" for="menu--mobile"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <input type="checkbox" id="menu--mobile" style="display:none;" />
+                <span style="display:none;">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </span>
             </nav>
         </header>
         <main>
