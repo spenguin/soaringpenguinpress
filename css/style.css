@@ -90,12 +90,35 @@ footer {
 /**
     Forms
 */
+.styled-select {
+  /*
+  select {
+      background-color: $SPPDarkBlue;
+      border: none;
+      font-family: $bodyFamily;
+      font-size: 0.8rem;
+      color: $SPPBlue;
+      overflow: hidden;
+      option {
+          border: none;
+          border-bottom: 1px solid $SPPDarkBlue;
+          background-color: $SPPBlue;
+          color: $SPPDarkBlue;
+      }
+  }*/
+}
 .styled-select select {
-  background-color: #035491;
-  border: none;
-  font-family: "Merriweather", Georgia, serif;
+  /*    width: 268px;
+      padding: 5px;*/
   font-size: 0.8rem;
-  color: #24A0FF;
+  padding-right: 25px;
+  line-height: 1;
+  border: 0;
+  font-family: "Merriweather", Georgia, serif;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #035491;
+  -webkit-appearance: none;
+  background-position-x: right;
+  -moz-appearance: none;
 }
 .styled-select select option {
   border: none;
