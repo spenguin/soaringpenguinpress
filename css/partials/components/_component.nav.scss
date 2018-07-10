@@ -1,0 +1,34 @@
+/**
+    Nav
+*/
+
+.login a {
+    font-size: 1.0rem;
+    color: white;
+    @include respond-to-above( xs-screens )
+    {
+        font-size: 1.6rem;
+    }
+}
+.open {
+    font-size: 1.0rem;
+    @include respond-to-above( xs-screens )
+    {
+        font-size: 1.6rem;
+    }    
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    a {
+        color: white;
+        text-decoration: none;
+        font-size:0.9rem;
+        margin-left: 0;
+        &:hover {
+            color: $SPPOrange;
+            transition-duration: 0.5s;
+        }
+    }
+}

@@ -7,15 +7,39 @@ html, body {
 }
 .container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
 }
 header {
     max-width: 100%;
+    @include respond-to-above( xs-screens )
+    {
+        line-height: 2.8rem;
+    }
+}
+.mobile {
+    margin-right: 2%;
 }
 
 main {
     padding: 5%;
+    flex: 1;
+    background: url( img/header-bg3.png ) no-repeat;
+    
 }
 
 footer {
     width: 100%;
+    * {
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: 0.9rem;
+    }
+    @include respond-to-above( xs-screens )
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
