@@ -87,7 +87,9 @@ header {
 main {
   padding: 5%;
   flex: 1;
-  background: url(img/header-bg3.png) no-repeat;
+  background: url(../img/header-bg3.png) no-repeat;
+  background-size: 100%;
+  background-position-y: 2%;
 }
 
 footer {
