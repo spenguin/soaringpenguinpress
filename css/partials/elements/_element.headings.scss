@@ -9,3 +9,24 @@ h2 {
 .section-teaser h2 {
     margin-bottom: 0;
 }
+h3 {
+    font-size: 1.0rem;
+    font-family: $headerFamily;
+}
+.book-text h3 {
+    color: $SPPDarkBlue;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    &.book-title {
+        font-size:1.8rem;
+        margin-top: 1%;
+    }
+    &.book-author {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    &:hover {
+        color: $SPPBlue;
+    }
+}

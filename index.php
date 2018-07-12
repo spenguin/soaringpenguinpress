@@ -47,10 +47,30 @@
             </div>
             <div class="books">
                 <div class="books_featured carousel">
+                    <article>
+                        <a href="">  
+                            <p class="book-callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />
+                            <div class="book-text">
+                                <h3 class="book-title">Sugar</h3> 
+                                <h3 class="book-author">Serge Baeken</h3>
+                            </div>
+                        </a>
+                    </article>
                 </div>
                 <div class="books_bestseller carousel">
+                    <article>
+                        <a href="">  
+                            <p class="book-callout bestseller">Bestseller</p>
+                            <img src="img/meanwhile8.jpg" />
+                            <div class="book-text">
+                                <h3 class="book-title">Meanwhile... 8</h3> 
+                                <h3 class="book-author">Gary Spencer Millidge, David Hine, Mark Stafford, Martin Simpson, Sarah Gordon, Ginny Skinner</h3>
+                            </div>
+                        </a>
+                    </article>                    
                 </div>
-                <a href="">Visit the Shop</a>
+                <a href="" class="btn">Visit the Shop</a>
             </div>
             <div class="creators">
                 <div class="creators_featured">

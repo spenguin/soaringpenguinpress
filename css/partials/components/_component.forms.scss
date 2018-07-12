@@ -24,6 +24,17 @@
             color: $SPPDarkBlue;
         }        
     }
+}
+
+.btn {
+    background-color: $SPPDarkBlue;
+    padding: 8px 11px;
+    display: inline-block;
+    border: 1px solid black;
+    text-decoration: none;
+    color: $SPPBlue;  
+    font-size:1.5rem;  
+}
 
 
     /*
@@ -42,7 +53,7 @@
         }
     }*/
 
-}
+//}
 
 /*
 .styled-select select {
