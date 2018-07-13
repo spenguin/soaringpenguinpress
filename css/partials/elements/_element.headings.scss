@@ -19,14 +19,12 @@ h3 {
     margin-bottom: 0;
     text-align: center;
     &.book-title {
-        font-size:1.8rem;
+        font-size:1.3rem;
         margin-top: 1%;
     }
     &.book-author {
-        font-size: 1.5rem;
+        font-size: 1.0rem;
         font-style: italic;
-    }
-    &:hover {
-        color: $SPPBlue;
+        line-height: 1.3rem;
     }
 }

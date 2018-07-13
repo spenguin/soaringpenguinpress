@@ -74,7 +74,7 @@ html, body {
 header {
   max-width: 100%;
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
   header {
     line-height: 2.8rem;
   }
@@ -91,9 +91,6 @@ main {
   background-size: 100%;
   background-position-y: 2%;
 }
-main .books div {
-  margin-bottom: 3%;
-}
 
 footer {
   width: 100%;
@@ -103,7 +100,7 @@ footer * {
   margin-right: 1%;
   font-size: 0.9rem;
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
   footer {
     display: flex;
     flex-direction: row;
@@ -138,15 +135,13 @@ h3 {
   text-align: center;
 }
 .book-text h3.book-title {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin-top: 1%;
 }
 .book-text h3.book-author {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
-}
-.book-text h3:hover {
-  color: #24A0FF;
+  line-height: 1.3rem;
 }
 
 /*
@@ -166,7 +161,7 @@ h3 {
   font-size: 1rem;
   color: white;
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
   .login a {
     font-size: 1.6rem;
   }
@@ -175,7 +170,7 @@ h3 {
 .open {
   font-size: 1rem;
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
   .open {
     font-size: 1.6rem;
   }
@@ -222,16 +217,32 @@ footer {
     Article styling
 */
 .books article {
-  height: 240px;
+  height: 400px;
   overflow: hidden;
+  margin-bottom: 3%;
+}
+.books article:last-child {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .books article:last-child {
+    display: inline-block;
+    float: right;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .books article {
+    width: 48%;
+    float: left;
+  }
 }
 .books article a {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
   position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 .books article a p {
   position: absolute;
@@ -244,14 +255,16 @@ footer {
   transform: rotate(-4deg);
 }
 .books article a img {
-  width: 100%;
-  margin-top: -25%;
-  flex: 1;
+  /*    width: 100%;
+      top: -25%;*/
+  height: 100%;
 }
 .books article a .book-text {
-  margin-top: -250px;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 0 2%;
+  padding: 0 0 2% 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /**

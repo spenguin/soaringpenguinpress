@@ -57,6 +57,16 @@
                             </div>
                         </a>
                     </article>
+                    <article>
+                        <a href="">  
+                            <p class="book-callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />
+                            <div class="book-text">
+                                <h3 class="book-title">Sugar</h3> 
+                                <h3 class="book-author">Serge Baeken</h3>
+                            </div>
+                        </a>
+                    </article>                    
                 </div>
                 <div class="books_bestseller carousel">
                     <article>

@@ -2,15 +2,27 @@
     Article styling
 */
 .books article {
-    height: 240px;
+    height: 400px; //240px;
     overflow: hidden;
+    margin-bottom: 3%;
+    &:last-child {
+        display: none;  // Temporary setting
+        @include respond-to-above( xs-mini-screens ) {
+            display: inline-block;
+            float: right; // Temporary setting
+        }        
+    }
+    @include respond-to-above(xs-mini-screens ) {
+        width: 48%;
+        float: left; // Temporary setting
+    }    
     a {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
         position: relative;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
         p {
             position: absolute;
             top: 10px;
@@ -22,14 +34,17 @@
             transform: rotate(-4deg);
         }
         img {
-            width: 100%;
-            margin-top: -25%;
-            flex: 1;
+        /*    width: 100%;
+            top: -25%;*/
+            height: 100%;
+        //    position: absolute;
         }
         .book-text {
-            margin-top: -250px;
             background-color: rgba(255, 255, 255, 0.5);
-            padding: 0 2%;
+            padding: 0 0 2% 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     }
 }
