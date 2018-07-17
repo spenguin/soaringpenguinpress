@@ -46,36 +46,56 @@
                 This is the text for the opening paragraph.
             </div>
             <div class="books">
-                <div class="books_featured carousel">
-                    <article>
-                        <a href="">  
-                            <p class="book-callout featured">Featured Title</p>
-                            <img src="img/sugar.png" />
-                            <div class="book-text">
-                                <h3 class="book-title">Sugar</h3> 
-                                <h3 class="book-author">Serge Baeken</h3>
+                <div class="carousel">
+                    <article class="unit">
+                        <a href=""> 
+                            <p class="callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />                            
+                            <div class="unit-text">
+                                <h3 class="unit-text-main">Sugar</h3> 
+                                <h3 class="unit-text-minor">Serge Baeken</h3>
                             </div>
                         </a>
                     </article>
-                    <article>
-                        <a href="">  
-                            <p class="book-callout featured">Featured Title</p>
-                            <img src="img/sugar.png" />
-                            <div class="book-text">
-                                <h3 class="book-title">Sugar</h3> 
-                                <h3 class="book-author">Serge Baeken</h3>
+                    <article class="unit">
+                        <a href=""> 
+                            <p class="callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />                            
+                            <div class="unit-text">
+                                <h3 class="unit-text-main">Sugar</h3> 
+                                <h3 class="unit-text-minor">Serge Baeken</h3>
                             </div>
                         </a>
-                    </article>                    
+                    </article>  
+                    <article class="unit">
+                        <a href=""> 
+                            <p class="callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />                            
+                            <div class="unit-text">
+                                <h3 class="unit-text-main">Sugar</h3> 
+                                <h3 class="unit-text-minor">Serge Baeken</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="unit">
+                        <a href=""> 
+                            <p class="callout featured">Featured Title</p>
+                            <img src="img/sugar.png" />                            
+                            <div class="unit-text">
+                                <h3 class="unit-text-main">Sugar</h3> 
+                                <h3 class="unit-text-minor">Serge Baeken</h3>
+                            </div>
+                        </a>
+                    </article>                                      
                 </div>
-                <div class="books_bestseller carousel">
-                    <article>
-                        <a href="">  
-                            <p class="book-callout bestseller">Bestseller</p>
+                <div class="carousel">
+                    <article class="unit" style="width:100%"><!-- style needs to be removed -->
+                        <a href=""> 
+                            <p class="callout bestseller">Bestseller</p>
                             <img src="img/meanwhile8.jpg" />
-                            <div class="book-text">
-                                <h3 class="book-title">Meanwhile... 8</h3> 
-                                <h3 class="book-author">Gary Spencer Millidge, David Hine, Mark Stafford, Martin Simpson, Sarah Gordon, Ginny Skinner</h3>
+                            <div class="unit-text">
+                                <h3 class="unit-text-main">Meanwhile... 8</h3> 
+                                <h3 class="unit-text-minor">Gary Spencer Millidge, David Hine, Mark Stafford, Martin Simpson, Sarah Gordon, Ginny Skinner</h3>
                             </div>
                         </a>
                     </article>                    
@@ -83,9 +103,24 @@
                 <a href="" class="btn">Visit the Shop</a>
             </div>
             <div class="creators">
-                <div class="creators_featured">
+                <article class="unit" style="width:100%"><!-- style needs to be removed -->
+                    <a href="">
+                        <p class="callout featured-creator">Featured Creator</p>
+                        <img src="img/sergebaeken.jpg" />
+                        <div class="unit-text">
+                            <h3 class="unit-text-main">Serge Baeken</h3> 
+                        </div>
+                    </a>
+                    <div class="creators-shortbio">
+                        <h3>Serge Baeken</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sagittis ante. Donec consequat in urna in dictum. Quisque a maximus ipsum. Proin rutrum efficitur mi, id commodo nunc commodo at. Vestibulum at eleifend odio, quis consequat odio.<a href="">Read more...</a></p>
+                        <ul>
+                            <li><a href="">Sugar</a>
+                        </ul>
+                    </div>
+                </article>
                 </div>
-                <a href="">Creators</a>
+                <a href="" class="btn">Meet the Creators</a>
             </div>
             <div class="sections">
                 <div class="section-teaser news ">

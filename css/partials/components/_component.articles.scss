@@ -1,50 +1,72 @@
 /**
     Article styling
 */
-.books article {
+article.unit
+{
     height: 400px; //240px;
     overflow: hidden;
     margin-bottom: 3%;
+    display: none;
+    &:first-child {
+        @include respond-to-above( xs-mini-screens ) {
+            display: inline-block;
+            float: left; // Temporary setting
+        }         
+    }
     &:last-child {
-        display: none;  // Temporary setting
+        display: block;  // Temporary setting
         @include respond-to-above( xs-mini-screens ) {
             display: inline-block;
             float: right; // Temporary setting
-        }        
+        }  
     }
-    @include respond-to-above(xs-mini-screens ) {
+    @include respond-to-above( xs-mini-screens ) {
         width: 48%;
         float: left; // Temporary setting
-    }    
-    a {
-        width: 100%;
+    }  
+    @include respond-to-above( xs-screens ) {
+        display: inline-block;  
+        width: 23%;
+    }     
+  
+}
+
+.unit a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    p {
+        position: absolute;
+        top: 10px;
+        left: 20%;
+        padding: 1px 5px 1px 3px;
+        color: $SPPBlue;
+        background-color: white;
+        box-shadow: 1px 2px 2px $SPPGrey;
+        transform: rotate(-4deg);
+        display: table-caption;
+    }
+    img {
         height: 100%;
-        position: relative;
+    }
+    .unit-text {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 0 0 2% 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }        
+}
+
+.creators article.unit {
+    display: flex;
+    justify-content: space-between;
+    a {
         display: inline-block;
-        display: flex;
-        justify-content: center;
-        p {
-            position: absolute;
-            top: 10px;
-            left: 2px;
-            padding: 1px 5px 1px 3px;
-            color: $SPPBlue;
-            background-color: white;
-            box-shadow: 1px 2px 2px $SPPGrey;
-            transform: rotate(-4deg);
-        }
-        img {
-        /*    width: 100%;
-            top: -25%;*/
-            height: 100%;
-        //    position: absolute;
-        }
-        .book-text {
-            background-color: rgba(255, 255, 255, 0.5);
-            padding: 0 0 2% 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+        width: 48%;
+    }
+    .creators-shortbio {
+        width: 48%;
     }
 }

@@ -13,16 +13,16 @@ h3 {
     font-size: 1.0rem;
     font-family: $headerFamily;
 }
-.book-text h3 {
+.unit-text h3 {
     color: $SPPDarkBlue;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-    &.book-title {
+    &.unit-text-main {
         font-size:1.3rem;
         margin-top: 1%;
     }
-    &.book-author {
+    &.unit-text-minor {
         font-size: 1.0rem;
         font-style: italic;
         line-height: 1.3rem;

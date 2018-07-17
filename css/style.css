@@ -128,17 +128,17 @@ h3 {
   font-family: "Lato", Arial, sans-serif;
 }
 
-.book-text h3 {
+.unit-text h3 {
   color: #035491;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
-.book-text h3.book-title {
+.unit-text h3.unit-text-main {
   font-size: 1.3rem;
   margin-top: 1%;
 }
-.book-text h3.book-author {
+.unit-text h3.unit-text-minor {
   font-size: 1rem;
   font-style: italic;
   line-height: 1.3rem;
@@ -216,55 +216,78 @@ footer {
 /**
     Article styling
 */
-.books article {
+article.unit {
   height: 400px;
   overflow: hidden;
   margin-bottom: 3%;
-}
-.books article:last-child {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  .books article:last-child {
+  article.unit:first-child {
+    display: inline-block;
+    float: left;
+  }
+}
+article.unit:last-child {
+  display: block;
+}
+@media only screen and (min-width: 600px) {
+  article.unit:last-child {
     display: inline-block;
     float: right;
   }
 }
 @media only screen and (min-width: 600px) {
-  .books article {
+  article.unit {
     width: 48%;
     float: left;
   }
 }
-.books article a {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
+@media only screen and (min-width: 900px) {
+  article.unit {
+    display: inline-block;
+    width: 23%;
+  }
 }
-.books article a p {
+
+.unit a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+.unit a p {
   position: absolute;
   top: 10px;
-  left: 2px;
+  left: 20%;
   padding: 1px 5px 1px 3px;
   color: #24A0FF;
   background-color: white;
   box-shadow: 1px 2px 2px #888888;
   transform: rotate(-4deg);
+  display: table-caption;
 }
-.books article a img {
-  /*    width: 100%;
-      top: -25%;*/
+.unit a img {
   height: 100%;
 }
-.books article a .book-text {
+.unit a .unit-text {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0 0 2% 0;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.creators article.unit {
+  display: flex;
+  justify-content: space-between;
+}
+.creators article.unit a {
+  display: inline-block;
+  width: 48%;
+}
+.creators article.unit .creators-shortbio {
+  width: 48%;
 }
 
 /**
@@ -299,6 +322,7 @@ footer {
   text-decoration: none;
   color: #24A0FF;
   font-size: 1.5rem;
+  margin-bottom: 3%;
 }
 
 /*
