@@ -1,0 +1,26 @@
+/** Event List style */
+
+.sp_event_list-event {
+    border: 1px solid #bce7fd;
+    display: flex;
+    margin-bottom: 12px;
+  }
+  .sp_event_list-event .sp_event_list-event-date {
+    background-color: #bce7fd;
+    color: #24A0FF;
+    width: 20%;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .sp_event_list-event .sp_event_list-event-date span {
+    display: block;
+  }
+  .sp_event_list-event .sp_event_list-event-text {
+    width: 80%;
+    padding: 2px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

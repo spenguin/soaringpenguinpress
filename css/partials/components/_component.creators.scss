@@ -1,0 +1,36 @@
+/** Styling for Creators page **/
+
+#creators-main {
+    width: $maxWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;   
+    @include respond-to( medium-screens )
+    {
+        width: 970px;
+    } 
+    @include respond-to( small-screens )
+    {
+        width: 750px;
+    }
+    @include respond-to( xs-screens )
+    {
+        width: 100%;
+    }
+}
+.archive-creator--creator-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.archive-creator--creator-detail {
+    width: 23%;
+    margin-right: 2%;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}

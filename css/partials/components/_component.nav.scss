@@ -1,34 +1,25 @@
-/**
-    Nav
-*/
+/** Navigation styles */
 
-.login a {
-    font-size: 1.0rem;
-    color: white;
-    @include respond-to-above( xs-screens )
-    {
-        font-size: 1.6rem;
+#menu-main-menu .current-menu-item {
+    background-color: $SPPBlue!important;
+    a {
+        color: white!important;
+        &:hover {
+            color: $SPPDarkBlue!important;
+        }
     }
 }
-.open {
-    font-size: 1.0rem;
-    @include respond-to-above( xs-screens )
-    {
-        font-size: 1.6rem;
-    }    
+
+#menu-main-menu a:hover, 
+#menu-main-menu a:hover {
+    color: $SPPBlue!important;
 }
-.footer-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;    
-    a {
-        color: white;
-        text-decoration: none;
-        font-size:0.9rem;
-        margin-left: 0;
-        &:hover {
-            color: $SPPOrange;
-            transition-duration: 0.5s;
-        }
+
+a.cta {
+    color: $SPPDarkBlue;
+    font-size: 16px;
+    margin: 24px 0;
+    &:hover {
+        color: $SPPOrange;
     }
 }

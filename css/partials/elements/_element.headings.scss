@@ -1,30 +1,12 @@
-/**
-    Headings
-*/
+/** Headings styles */
 
-h2 {
-    font-size: 1.2rem;
-    font-family: $headerFamily;
+.top-menu h1 {
+    color: white;
+    font-size: 2.5rem;
 }
-.section-teaser h2 {
-    margin-bottom: 0;
-}
-h3 {
-    font-size: 1.0rem;
-    font-family: $headerFamily;
-}
-.unit-text h3 {
-    color: $SPPDarkBlue;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    &.unit-text-main {
-        font-size:1.3rem;
-        margin-top: 1%;
-    }
-    &.unit-text-minor {
-        font-size: 1.0rem;
-        font-style: italic;
-        line-height: 1.3rem;
-    }
+
+.top-menu h2 {
+    color: white;
+    font-size: 2.1rem;
+    font-style: italic;
 }

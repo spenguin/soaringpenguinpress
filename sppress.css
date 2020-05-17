@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/**
+Colours
+*/
+/**
+	Grid values
+*/
+/**
+	Mixins
+*/
+/* Usage - Stick into the top of your SCSS sheet and @include where needed for cross browser transitions. 
+
+.class {
+		 @include transition($transition-property, $transition-time, $method);
+}
+
+$transition-property = the property you want to transition
+$transition-time = seconds you want the transition to last
+$method = how you want it to transition - e.g. ease-in-out
+
+Usage example;
+
+-------------
+
+.item {
+		@include transition(padding, 1s, ease-in-out);
+}
+
+-------------
+
+*/
+/**
+	Calculate the width of <main> based on the aside and gutter widths
+*/
+/**
+	Set of mixins from https://gist.github.com/garyharan/957284
+*/
+/**
+    Elements accumulated
+*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#creator-main {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1149px) {
+  #creator-main {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #creator-main {
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #creator-main {
+    width: 100%;
+  }
+}
+
+.site-main .single-creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.single-creator--creator-details,
+.single-creator--sidebar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.single-creator--has-sidebar .single-creator--creator-details {
+  width: 75%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-creator--has-sidebar .single-creator--creator-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-creator--has-sidebar .single-creator--creator-details {
+    width: 100%;
+  }
+}
+.single-creator--has-sidebar .single-creator--creator-details .summary {
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .single-creator--has-sidebar .single-creator--creator-details .summary {
+    width: 100%;
+  }
+}
+
+.single-creator--has-sidebar .single-creator--sidebar {
+  width: 25%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-creator--has-sidebar .single-creator--sidebar {
+    width: 100%;
+  }
+}
+
+.creator-details.has-post-thumbnail {
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .creator-details.has-post-thumbnail {
+    width: 100%;
+  }
+}
+
+/** Headings styles */
+.top-menu h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.top-menu h2 {
+  color: white;
+  font-size: 2.1rem;
+  font-style: italic;
+}
+
+/*
+@import "partials/objects.grid";
+@import "partials/objects.wrappers";*/
+/*
+@import "partials/elements.headings";
+@import "partials/elements.text";
+*/
+/**
+    Components accumulated
+*/
+/** Main styling */
+#creator-main .single-creator img {
+  max-width: 100%;
+  height: auto;
+}
+
+.single-creator--creator-details .related {
+  width: 100%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+.single-creator--creator-details .related ul {
+  padding: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  list-style: none;
+}
+.single-creator--creator-details .related ul li {
+  width: 25%;
+  clear: left;
+}
+@media only screen and (max-width: 767px) {
+  .single-creator--creator-details .related ul li {
+    width: 50%;
+  }
+}
+.single-creator--creator-details .related ul li .item-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.single-creator--creator-details .related .item-info {
+  position: relative;
+  padding: 2px 20px;
+  display: block;
+}
+.single-creator--creator-details .related .item-info h3 {
+  margin-top: 20px;
+  margin-right: 25px;
+}
+.single-creator--creator-details .related .item-info .product-creators {
+  margin-top: 5px;
+}
+.single-creator--creator-details .related .item-info .product-creators a {
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+}
+.single-creator--creator-details .related .item-info .product-terms {
+  display: inline-block;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.single-creator--creator-details .related .item-info .product-terms a {
+  color: #888;
+}
+.single-creator--creator-details .related .item-info .price {
+  display: block;
+  color: #333;
+  margin-right: 0;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.single-creator--creator-details .related .item-info a[data-product_id] {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  text-decoration: none;
+}
+.single-creator--creator-details .related .item-info a[data-product_id]::before {
+  position: relative;
+  font-family: EntypoRegular;
+  content: "";
+  font-weight: 300;
+  display: block;
+  font-size: 22px;
+  line-height: 0;
+  color: #222;
+  margin-right: 10px;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.single-creator--creator-details .related .item-info a[data-product_id]::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: EntypoRegular;
+  content: "";
+  display: block;
+  color: #0fbd71;
+  margin-right: 10px;
+  top: -8px;
+  background: url(../images/check.png) no-repeat center center;
+  background-size: auto auto;
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+  zoom: 1;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/** Styling for Creators page **/
+#creators-main {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1149px) {
+  #creators-main {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #creators-main {
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #creators-main {
+    width: 100%;
+  }
+}
+
+.archive-creator--creator-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.archive-creator--creator-detail {
+  width: 23%;
+  margin-right: 2%;
+}
+.archive-creator--creator-detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+/** Header styles */
+header .top-menu {
+  color: white !important;
+  background-color: #007fdc;
+}
+
+/** Navigation styles */
+#menu-main-menu .current-menu-item {
+  background-color: #007fdc !important;
+}
+#menu-main-menu .current-menu-item a {
+  color: white !important;
+}
+#menu-main-menu .current-menu-item a:hover {
+  color: #00192b !important;
+}
+
+#menu-main-menu a:hover,
+#menu-main-menu a:hover {
+  color: #007fdc !important;
+}
+
+a.cta {
+  color: #00192b;
+  font-size: 16px;
+  margin: 24px 0;
+}
+a.cta:hover {
+  color: #DE8909;
+}
+
+/** Event List style */
+.sp_event_list-event {
+  border: 1px solid #bce7fd;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.sp_event_list-event .sp_event_list-event-date {
+  background-color: #bce7fd;
+  color: #24A0FF;
+  width: 20%;
+  padding: 2px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.sp_event_list-event .sp_event_list-event-date span {
+  display: block;
+}
+
+.sp_event_list-event .sp_event_list-event-text {
+  width: 80%;
+  padding: 2px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Style Flashtags */
+.woocommerce .onsale.featured {
+  background-color: #DE8909 !important;
+}
+
+a.cart-counter .badge {
+  background-color: #DE8909 !important;
+}
+
+/*
+@import "partials/components.header";
+@import "partials/components.footer";
+@import "partials/components.site-nav";
+@import "partials/components.articles";
+@import "partials/components.buttons";
+@import "partials/components.forms";
+
+*/
+
+/*# sourceMappingURL=sppress.css.map */

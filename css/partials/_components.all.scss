@@ -1,11 +1,15 @@
+
 /**
     Components accumulated
 */
+@import "components/component.main";
+@import "components/component.creators";
+@import "components/component.header";
 //@import "components/component.sections";
 @import "components/component.nav";
-@import "components/component.header";
-@import "components/component.footer";
-@import "components/component.articles";
+@import "components/component.eventlist";
+@import "components/component.flashtags";
+//@import "components/component.header";
+//@import "components/component.articles";
 //@import "components/component.footer";
-@import "components/component.forms";
-@import "components/component.lists";
+//@import "components/component.forms";*/

@@ -1,12 +1,6 @@
-/**
-    Header
-*/
-header {
-    background-color: $SPPDarkBlue;
-    color: white;
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0 1%;
+/** Header styles */
+
+header .top-menu {
+    color: white !important;
+    background-color: $SPPBlue;
 }
